@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ResultModal({ result, targetTime }) {
+export default function ResultModal({ ref, result, targetTime }) {
   return (
     <>
-      <dialog className="result-modal" open>
+      <dialog ref={ref} className="result-modal">
         <h2>You {result}</h2>
         <p>
           The target time was{" "}
