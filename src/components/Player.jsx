@@ -11,6 +11,7 @@ export default function Player() {
     setState({
       playerName: playerName.current.value,
     });
+    playerName.current.value = "";
   }
 
   return (
